@@ -1,0 +1,15 @@
+package functions
+
+import "fmt"
+
+var Fullname string
+
+//หรือ func add(x, y int) ถ้า x, y มีค่าเท่ากันก็ประกาศแบบนี้ได้
+
+func add(x int, y int) int {
+	return x + y
+}
+
+func Learn() {
+	fmt.Println(add(10, 5))
+}

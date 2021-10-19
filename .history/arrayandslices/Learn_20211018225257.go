@@ -1,0 +1,29 @@
+package arrayandslices
+
+import "fmt"
+
+func Learn() {
+
+	//ประกาศ array
+	var arr [2]string
+	arr[0] = "A"
+	arr[1] = "B"
+
+	fmt.Println(arr)
+
+	//ประกาศค่าเริ่มต้น
+	arr2 := [6]int{1, 2, 3, 9, 8, 7}
+	for _, v := range arr2 {
+		fmt.Println(v)
+	}
+
+	fmt.Println("-------------------------------")
+
+	//slice คือ build on top ของ array
+	//คล้ายๆ substring [index เริ่ม: index สุดท้ายที่เอา]
+	var s []int = arr2[2:4]
+	fmt.Println(s)
+
+	
+	s2 := [] int{2,3,5,7}
+}
